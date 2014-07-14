@@ -29,9 +29,9 @@
 
                 <ul class="nav navbar-nav navbar-left">
 
-                    <li class="active"><a href="#">Dashboard</a>
+                    <li><a href="index.html">Dashboard</a>
                     </li>
-                    <li class="dropdown">
+                    <li class="dropdown active">
 
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Configure<b class="caret"></b></a>
 
@@ -103,63 +103,80 @@
 
     <div class="container">
         <div class="panel panel-default">
-            <a href="#" class="list-group-item">
-                <h4 class="list-group-item-heading">VLAN List</h4>
-                <p class="list-group-item-text">
 
-                    <table>
-                        <thead>
-                            <th>Name</th>
-                            <th>Tag</th>
-                            <th>Protocol Address</th>
-                            <th>Proto</th>
-                            <th>Ports Active/Total</th>
-                            <th>Virtual Router</th>
-                            <th>Details</th>
-                        </thead>
+            <div class="panel-heading">
+                <div class="col-lg-3">
+                    <h3>VLAN List</h3>
+                </div>
+                <div style="padding-top: 20px" class="col-lg-6">
+                    <input name="search">
+                </div>
+                <div style="padding-top: 20px" class="col-lg-3">
+                    <a href="form.html" class="btn btn-default pull-right">Create VLAN</a>
+                </div>
+                <div style="clear:both"></div>
+            </div>
+            <div class="panel-body">
 
-                        <tbody>
-                            <tr>
-                                <th>Default</th>
-                                <td>1</td>
-                                <td>-</td>
-                                <td>ANY</td>
-                                <td>0/0</td>
-                                <td>VR-Default</td>
-                                <td>-></td>
-                            </tr>
-                            <tr>
-                                <th>Default</th>
-                                <td>1</td>
-                                <td>-</td>
-                                <td>ANY</td>
-                                <td>0/0</td>
-                                <td>VR-Default</td>
-                                <td>-></td>
-                            </tr>
-                            <tr>
-                                <th>Default</th>
-                                <td>1</td>
-                                <td>-</td>
-                                <td>ANY</td>
-                                <td>0/0</td>
-                                <td>VR-Default</td>
-                                <td>-></td>
-                            </tr>
-                            <tr>
-                                <th>Default</th>
-                                <td>1</td>
-                                <td>-</td>
-                                <td>ANY</td>
-                                <td>0/0</td>
-                                <td>VR-Default</td>
-                                <td>-></td>
-                            </tr>
-                        </tbody>
+                <table>
+                    <thead>
+                        <th>Name</th>
+                        <th style="text-align:right">Tag</th>
+                        <th style="text-align:right">Protocol Address</th>
+                        <th style="text-align:right">Proto</th>
+                        <th style="text-align:right">Ports Active/Total</th>
+                        <th style="text-align:right">Virtual Router</th>
+                        <th style="text-align:right">Details</th>
+                    </thead>
 
-                    </table>
-                </p>
-            </a>
+                    <tbody>
+                        <tr>
+                            <th>Default</th>
+                            <td style="text-align:right">1</td>
+                            <td style="text-align:right">-</td>
+                            <td style="text-align:right">ANY</td>
+                            <td style="text-align:right">0/0</td>
+                            <td style="text-align:right">VR-Default</td>
+                            <td style="text-align:right"><span class="glyphicon glyphicon-arrow-right"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Default</th>
+                            <td style="text-align:right">1</td>
+                            <td style="text-align:right">-</td>
+                            <td style="text-align:right">ANY</td>
+                            <td style="text-align:right">0/0</td>
+                            <td style="text-align:right">VR-Default</td>
+                            <td style="text-align:right"><span class="glyphicon glyphicon-arrow-right"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Default</th>
+                            <td style="text-align:right">1</td>
+                            <td style="text-align:right">-</td>
+                            <td style="text-align:right">ANY</td>
+                            <td style="text-align:right">0/0</td>
+                            <td style="text-align:right">VR-Default</td>
+                            <td style="text-align:right">
+                                <span class="glyphicon glyphicon-arrow-right"></span>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Default</th>
+                            <td style="text-align:right">1</td>
+                            <td style="text-align:right">-</td>
+                            <td style="text-align:right">ANY</td>
+                            <td style="text-align:right">0/0</td>
+                            <td style="text-align:right">VR-Default</td>
+                            <td style="text-align:right"><span class="glyphicon glyphicon-arrow-right"></span>
+                            </td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
+
         </div>
         <div class="navbar navbar-default navbar-fixed-bottom">
 
@@ -170,15 +187,15 @@
 
         </div>
 
-        <div class="modal fade" id="contact" role="dialog">
+        <div class="modal fade" id="create" role="dialog">
 
             <div class="modal-dialog">
                 <div class "modal-content">
                     <div class="modal-header">
-                        <h4>Contact tech Sight</h4>
+                        <h4>Create VLAN</h4>
                     </div>
                     <div class="modal-body">
-                        <p>asdfasdkfajdskl;fajdfkl;asjdfklajsdf;kl</p>
+                        <p>Something</p>
                     </div>
                     <div class="modal-footer">
                         <a class="btn btn-primary" data-dismiss="modal">OK</a>
@@ -189,9 +206,9 @@
         </div>
 
 
+    </div>
 
-
-        <script src=" http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js "></script>
-        <script src="js/bootstrap.js "></script>
+    <script src=" http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js "></script>
+    <script src="js/bootstrap.js "></script>
 
 </body>
