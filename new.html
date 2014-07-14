@@ -12,7 +12,7 @@
 
 <body>
 
-    <div class="navbar navbar-inverse navbar-static-top">
+    <div class="navbar navbar-inverse navbar-static-top" style="background:purple">
         <div class="container">
 
             <a href="#" class="navbar-brand">E</a>
@@ -108,6 +108,7 @@
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         System Info
+                        <span class="glyphicon glyphicon-play pull-right"></span>
                     </div>
                     <div class="panel-body">
                         <table style="width:80%">
@@ -134,28 +135,38 @@
 
                 <div class="panel panel-default">
 
-                    <a href="#" class="list-group-item">
-                        <h4 class="list-group-item-heading">VLANS</h4>
-                    </a>
+
+                    <div class="panel-heading">
+                        VLANS
+                    </div>
+
                 </div>
                 <div class="panel panel-default">
 
-                    <a href="#" class="list-group-item">
-                        <h4 class="list-group-item-heading">Ports</h4>
-                    </a>
+
+                    <div class="panel-heading">
+                        Ports
+                    </div>
+
                 </div>
                 <div class="panel panel-default">
-                    <a href="#" class="list-group-item">
-                        <h4 class="list-group-item-heading">Power Cooling</h4>
+                    <div class="panel-heading">
+                        Power Cooling
+                    </div>
+                    <div class="list-group-item">
+
                         <p class="list-group-item-text">Power Supplies</p>
-                        <p class="list-group-item-text">Fans"</p>
-                    </a>
+                        <p class="list-group-item-text">Fans</p>
+                    </div>
                 </div>
             </div>
             <div class="col-lg-3">
                 <div class="panel panel-default">
-                    <a href="#" class="list-group-item">
-                        <h4 class="list-group-item-heading">POE Ports</h4>
+                    <div class="panel-heading">
+                        POE Ports
+                    </div>
+                    <div class="list-group-item">
+
                         <p class="list-group-item-text">
                             <table style="width:80%">
                                 <tbody>
@@ -176,19 +187,25 @@
 
                             </table>
                         </p>
-                    </a>
+                    </div>
                 </div>
                 <div class="panel panel-default">
-                    <a href="#" class="list-group-item">
-                        <h4 class="list-group-item-heading">Top 5 Ports</h4>
-                        <p class="list-group-item-text">O</p>
-                    </a>
+                    <div class="panel-heading">
+                        Top 5 Ports
+                    </div>
+                    <div class="list-group-item">
+                        <span class="glyphicon glyphicon-refresh"></span>
+
+                    </div>
                 </div>
             </div>
             <div class="col-lg-3">
                 <div class="panel panel-default">
-                    <a href="#" class="list-group-item">
-                        <h4 class="list-group-item-heading">Recent Events</h4>
+                    <div class="panel-heading">
+                        Recent Events
+                    </div>
+                    <div class="list-group-item">
+
                         <p class="list-group-item-text">
                             <table style="width:80%">
                                 <tbody>
@@ -209,38 +226,48 @@
 
                             </table>
                         </p>
-                    </a>
+                    </div>
                 </div>
                 <div class="panel panel-default">
-                    <a href="#" class="list-group-item">
-                        <h4 class="list-group-item-heading">Blades</h4>
+                    <div class="panel-heading">
+                        Blades
+                    </div>
+                    <div class="list-group-item">
+
                         <p class="list-group-item-text">
                             <table style="width:80%">
                                 <thead>
                                     <th>System Info</th>
-                                    <th>Status</th>
-                                    <th>Temp</th>
+                                    <th style="text-align: right">Status</th>
+                                    <th style="text-align: right">Temp</th>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <th>Switch</th>
-                                        <td style="text-align: right">Check</td>
-                                        <td style="text-align: right">Check</td>
+                                        <td style="text-align: right">
+                                            <span class="glyphicon glyphicon-ok pull-right"></span>
+                                        </td>
+                                        <td style="text-align: right">
+                                            <span class="glyphicon glyphicon-ok pull-right"></span>
+                                        </td>
                                     </tr>
 
                                 </tbody>
 
                             </table>
                         </p>
-                    </a>
+                    </div>
                 </div>
 
             </div>
 
         </div>
-        <div class="panel panel-warning">
-            <a href="#" class="list-group-item">
-                <h4 class="list-group-item-heading">Last 5 Error Events</h4>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Last 5 Error events
+            </div>
+            <div class="list-group-item">
+
                 <p class="list-group-item-text">
 
                     <table style="width:80%">
@@ -266,7 +293,7 @@
 
                     </table>
                 </p>
-            </a>
+            </div>
         </div>
         <div class="navbar navbar-default navbar-fixed-bottom">
 
